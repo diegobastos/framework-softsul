@@ -1,0 +1,75 @@
+# Arquivos temporários gerados pelo Delphi
+__history/
+__recovery/
+__resources/
+__revisions/
+*.identcache
+*.local
+*.ddp
+*.dsk
+*.dproj.local
+*.bak
+*.~*
+*.tvsconfig
+
+# Arquivos de saída do Delphi
+*.exe
+*.dll
+*.bpl
+*.dcu
+*.dcp
+*.map
+*.manifest
+*.local
+
+# Unidades DCU (Arquivos compilados)
+*.dcu
+
+# Arquivos de saída do compilador
+*_i.c
+*_i.h
+*.obj
+*.exe
+*.dll
+*.bpl
+
+# Arquivos gerados pelo Delphi
+*.local
+*.identcache
+*.map
+*.bpl
+*.dll
+*.dcp
+*.drc
+*.res
+*.manifest
+*.exe
+*.exe.local
+*.manifest
+
+# Arquivos de projeto e configuração do Delphi
+#*.dproj
+#*.groupproj
+*.dsk
+*.dof
+*.identcache
+*.local
+*.cfg
+*.dcu
+*.dcp
+*.map
+*.tvsconfig
+
+# Arquivos temporários do Delphi
+__history/
+__recovery/
+__resources/
+__revisions/
+*.identcache
+*.local
+*.ddp
+*.dsk
+*.dproj.local
+*.bak
+*.~*
+*.tvsconfig
