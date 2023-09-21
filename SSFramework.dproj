@@ -112,13 +112,22 @@
             <Form>formGrid</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="framework\forms\uFormCrud.pas">
+            <Form>formCrud</Form>
+        </DCCReference>
         <DCCReference Include="tests\uGridFarms.pas">
             <Form>formGridFarms</Form>
-            <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="framework\classes\uCustomTab.pas"/>
         <DCCReference Include="tests\uGridUsers.pas">
             <Form>formGridUsers</Form>
+        </DCCReference>
+        <DCCReference Include="tests\uCrudFarm.pas">
+            <Form>formCrudFazenda</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="framework\popups\uPopupMessage.pas">
+            <Form>frmPopupMessage</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

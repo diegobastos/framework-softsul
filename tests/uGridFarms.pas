@@ -14,9 +14,9 @@ type
 
   protected
     procedure DoSearch; override;
+    function GetKeyRow: variant; override;
   public
-    function GetFormName: string; override;
-    procedure OpenForm(AParent: TWinControl); override;
+
   end;
 
 var
@@ -33,17 +33,11 @@ begin
   { Ação necessária para buscar os dados }
 end;
 
-function TformGridFarms.GetFormName: string;
+function TformGridFarms.GetKeyRow: variant;
 begin
-  Result := Caption;
+  Result := 1; //valor fake para testes;
 end;
 
-procedure TformGridFarms.OpenForm(AParent: TWinControl);
-begin
-  formGridFarms := TformGridFarms.Create(Application);
-  formGridFarms.Parent := AParent;
-  formGridFarms.Show;
-end;
 {$ENDREGION}
 
 end.

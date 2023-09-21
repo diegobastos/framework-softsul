@@ -1,0 +1,46 @@
+object frmPopupMessage: TfrmPopupMessage
+  Left = 0
+  Top = 0
+  BorderStyle = bsDialog
+  Caption = '[Title]'
+  ClientHeight = 85
+  ClientWidth = 442
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblMessage: TLabel
+    Left = 87
+    Top = 0
+    Width = 355
+    Height = 85
+    Align = alClient
+    Alignment = taCenter
+    Caption = '[Message]'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Layout = tlCenter
+    ExplicitWidth = 71
+    ExplicitHeight = 19
+  end
+  object imgIcon: TImage
+    AlignWithMargins = True
+    Left = 3
+    Top = 3
+    Width = 81
+    Height = 79
+    Align = alLeft
+    ExplicitLeft = 8
+    ExplicitTop = 8
+    ExplicitHeight = 73
+  end
+end

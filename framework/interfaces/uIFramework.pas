@@ -24,7 +24,11 @@ type
   }
   ICrudForm = interface(IInterface)
     ['{56DACBF1-A813-4EF4-B4FB-DF129109C74E}']
-    procedure OpenForm(AParent: TWinControl);
+    procedure OpenForm(AParent: TWinControl; AKey: variant);
+    procedure CreateRecord;
+    procedure ReadRecord;
+    procedure UpdateRecord;
+    procedure DeleteRecord;
   end;
 implementation
 

@@ -13,9 +13,9 @@ type
     { Private declarations }
   protected
     procedure DoSearch; override;
+    function GetKeyRow: variant; override;
   public
-    function GetFormName: string; override;
-    procedure OpenForm(AParent: TWinControl); override;
+    function GetFormName: string; overload;
   end;
 
 var
@@ -25,7 +25,7 @@ implementation
 
 {$R *.dfm}
 
-{ TformGridUsers }
+{$REGION 'TformGridUsers' }
 
 procedure TformGridUsers.DoSearch;
 begin
@@ -35,14 +35,14 @@ end;
 
 function TformGridUsers.GetFormName: string;
 begin
-  Result := Caption;
+  inherited;
+  //caso precise sobrescrever o método
 end;
 
-procedure TformGridUsers.OpenForm(AParent: TWinControl);
+function TformGridUsers.GetKeyRow: variant;
 begin
-  formGridUsers := TformGridUsers.Create(Application);
-  formGridUsers.Parent := AParent;
-  formGridUsers.Show;
+  Result := 1; //valor fake para testes;
 end;
+{$ENDREGION}
 
 end.
