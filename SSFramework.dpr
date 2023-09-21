@@ -6,8 +6,8 @@ uses
   uIFramework in 'framework\interfaces\uIFramework.pas',
   uFormGrid in 'framework\forms\uFormGrid.pas' {formGrid},
   uGridFarms in 'tests\uGridFarms.pas' {formGridFarms},
-  uGridUsers in 'tests\uGridUsers.pas' {formGridUsers},
-  uCustomTab in 'framework\classes\uCustomTab.pas';
+  uCustomTab in 'framework\classes\uCustomTab.pas',
+  uGridUsers in 'tests\uGridUsers.pas' {formGridUsers};
 
 {$R *.res}
 

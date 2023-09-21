@@ -9,7 +9,8 @@ object formMain: TformMain
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnCreate = FormCreate
+  OldCreateOrder = True
+  OnResize = FormResize
   PixelsPerInch = 96
   TextHeight = 15
   object sideBar: TPanel

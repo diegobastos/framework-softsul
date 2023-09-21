@@ -20,7 +20,7 @@ type
     pgcDesktop: TCustomTabControl;
     procedure btnFarmsClick(Sender: TObject);
     procedure btnUsersClick(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
+    procedure FormResize(Sender: TObject);
   private
     { Private declarations }
     procedure OpenTabForm(AForm: ITabForm);
@@ -50,12 +50,9 @@ begin
   OpenTabForm(formGridUsers);
 end;
 
-procedure TformMain.FormCreate(Sender: TObject);
+procedure TformMain.FormResize(Sender: TObject);
 begin
-//  var xCustomPageControl := TCustomTabControl.Create(pnlDesktop);
-//  xCustomPageControl.Name := 'pgcDesktop';
-//  xCustomPageControl.Parent := pnlDesktop;
-//  xCustomPageControl.Align := alClient;
+  pgcDesktop.Align := alClient;
 end;
 
 procedure TformMain.OpenTabForm(AForm: ITabForm);

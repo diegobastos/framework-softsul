@@ -3,15 +3,14 @@ unit uGridUsers;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
-  System.Classes, Vcl.Graphics,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uFormGrid, Data.DB, Vcl.StdCtrls,
   Vcl.ExtCtrls, Vcl.Grids, Vcl.DBGrids;
 
 type
   TformGridUsers = class(TformGrid)
   private
-
+    { Private declarations }
   protected
     procedure DoSearch; override;
   public
@@ -25,12 +24,13 @@ var
 implementation
 
 {$R *.dfm}
-{$REGION 'TformGridUsers' }
+
+{ TformGridUsers }
 
 procedure TformGridUsers.DoSearch;
 begin
   inherited;
-  // implementar as ações de buscas
+
 end;
 
 function TformGridUsers.GetFormName: string;
@@ -40,10 +40,9 @@ end;
 
 procedure TformGridUsers.OpenForm(AParent: TWinControl);
 begin
-  formGridUsers := formGridUsers.Create(Application);
+  formGridUsers := TformGridUsers.Create(Application);
   formGridUsers.Parent := AParent;
   formGridUsers.Show;
 end;
-{$ENDREGION}
 
 end.
