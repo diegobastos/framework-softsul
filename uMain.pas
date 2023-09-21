@@ -14,12 +14,13 @@ type
     sideBar: TPanel;
     pnlDesktop: TPanel;
     topBar: TPanel;
-    pgcDesktop: TPageControl;
     logoTop: TImage;
     btnFarms: TButton;
     btnUsers: TButton;
+    pgcDesktop: TCustomTabControl;
     procedure btnFarmsClick(Sender: TObject);
     procedure btnUsersClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
     procedure OpenTabForm(AForm: ITabForm);
@@ -49,11 +50,17 @@ begin
   OpenTabForm(formGridUsers);
 end;
 
+procedure TformMain.FormCreate(Sender: TObject);
+begin
+//  var xCustomPageControl := TCustomTabControl.Create(pnlDesktop);
+//  xCustomPageControl.Name := 'pgcDesktop';
+//  xCustomPageControl.Parent := pnlDesktop;
+//  xCustomPageControl.Align := alClient;
+end;
+
 procedure TformMain.OpenTabForm(AForm: ITabForm);
 begin
-  var
-  xNewTab := TCustomTabSheet.Create(pgcDesktop);
-
+  var xNewTab := TTabSheet.Create(pgcDesktop);
   xNewTab.PageControl := pgcDesktop;
   xNewTab.Caption := '[]';
   AForm.OpenForm(xNewTab);

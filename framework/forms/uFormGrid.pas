@@ -9,17 +9,16 @@ uses
 
 type
   TformGrid = class(TForm, ITabForm)
-    grid: TDBGrid;
+    gridDefault: TDBGrid;
     pnlTop: TPanel;
     btnSearch: TButton;
     procedure btnSearchClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
-    { Private declarations }
+
   protected
     procedure DoSearch; virtual; abstract;
   public
-    { Public declarations }
-    constructor Create(AOwner: TComponent); reintroduce;
 
     {ITabForm}
     function GetFormName: string; virtual; abstract;
@@ -39,12 +38,12 @@ begin
   DoSearch;
 end;
 
-constructor TformGrid.Create;
+procedure TformGrid.FormCreate(Sender: TObject);
 begin
-  inherited Create(AOwner);
   Align := alClient;
   BorderStyle := bsNone;
 end;
+
 {$ENDREGION}
 
 end.

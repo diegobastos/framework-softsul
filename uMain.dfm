@@ -1,21 +1,22 @@
 object formMain: TformMain
   Left = 0
   Top = 0
-  ClientHeight = 551
-  ClientWidth = 1029
+  ClientHeight = 543
+  ClientWidth = 1027
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 15
   object sideBar: TPanel
     Left = 0
     Top = 41
     Width = 33
-    Height = 510
+    Height = 502
     Align = alLeft
     TabOrder = 0
     object btnFarms: TButton
@@ -42,24 +43,22 @@ object formMain: TformMain
   object pnlDesktop: TPanel
     Left = 33
     Top = 41
-    Width = 996
-    Height = 510
+    Width = 994
+    Height = 502
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 1
-    object pgcDesktop: TPageControl
+    object pgcDesktop: TCustomTabControl
       Left = 0
       Top = 0
-      Width = 996
-      Height = 510
-      Align = alClient
-      TabOrder = 0
+      Width = 994
+      Height = 502
     end
   end
   object topBar: TPanel
     Left = 0
     Top = 0
-    Width = 1029
+    Width = 1027
     Height = 41
     Align = alTop
     TabOrder = 2

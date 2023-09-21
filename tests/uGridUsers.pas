@@ -40,7 +40,6 @@ end;
 
 procedure TformGridUsers.OpenForm(AParent: TWinControl);
 begin
-  inherited;
   formGridUsers := formGridUsers.Create(Application);
   formGridUsers.Parent := AParent;
   formGridUsers.Show;

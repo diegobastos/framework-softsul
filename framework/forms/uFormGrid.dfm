@@ -10,9 +10,10 @@ object formGrid: TformGrid
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 15
-  object grid: TDBGrid
+  object gridDefault: TDBGrid
     AlignWithMargins = True
     Left = 3
     Top = 47
